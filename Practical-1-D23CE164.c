@@ -7,17 +7,17 @@ int isValidString(const char *str) {
     int i = 0;
     
     if (length < 2 || str[length - 1] != 'b' || str[length - 2] != 'b') {
-        return 0; // Invalid string
+        return 0; 
     }
     
     while (i < length - 2) {
         if (str[i] != 'a') {
-            return 0; // Invalid string if not 'a' before 'bb'
+            return 0;
         }
         i++;
     }
     
-    return 1; // Valid string
+    return 1;
 }
 
 int main() {
